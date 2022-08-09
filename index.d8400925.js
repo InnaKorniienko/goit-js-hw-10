@@ -1,2 +1,0 @@
-const n=document.querySelector(".country-list");fetch("https://restcountries.com/v3.1/all?fields=name,capital,population,flags,languages").then((n=>n.json())).then((n=>{t(n)})).catch((n=>{}));const t=t=>{const a=(n=>n.reduce(((n,t)=>n+(n=>`<li>\n<img src="${n.flags.svg}" alt="flag" width=60 height=40>\n<h2>${n.name.official}</h2>\n<p> Capital: ${n.capital}</p>\n<p> Population: ${n.population}</p>\n<p> Languages: ${n.languages}</p>\n</li>`)(t)),""))(t);n.insertAdjacentHTML("beforeend",a)};
-//# sourceMappingURL=index.d8400925.js.map
